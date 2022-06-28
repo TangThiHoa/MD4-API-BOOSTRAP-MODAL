@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Câu trả lời 1: <br>
+<input class="cBAnswer" type="radio" value="1">
+Câu trả lời 2: <br>
+<input class="cBAnswer" type="radio" value="2">
+<button onclick="abc()">abc</button>
+<script>
+    let abc1 = document.getElementsByClassName("cBAnswer")
+    function abc() {
+        for(let i = 0; i < abc1.length; i++) {
+            if (abc1[i].checked) {
+                console.log(abc1[i].value)
+            }
+        }
+    }
+</script>
+</body>
+</html>
